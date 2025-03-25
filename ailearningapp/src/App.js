@@ -14,7 +14,7 @@ const App = () => (
   <Router>
     <Navbar/>
     <Routes>
-      {/* <Route path="/" element={<Login />} /> */}
+      {/* <Route path="/login" element={<Login />} /> */}
       <Route path="/dashboard" element={<UserDashboard />} />
       <Route path="/learning" element={<Lesson title="React Basics" content="React is a library..." />} />
       <Route path="/assessment" element={<Quiz />} />

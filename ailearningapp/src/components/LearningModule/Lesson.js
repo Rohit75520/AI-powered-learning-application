@@ -29,6 +29,7 @@ const videos = {
 const Lesson = () => {
   const [selectedGrade, setSelectedGrade] = useState('');
   const [selectedCourse, setSelectedCourse] = useState('');
+  const [fullscreenVideo, setFullscreenVideo] = useState(null);
 
   return (
     <div className="lesson-container">
@@ -59,13 +60,19 @@ const Lesson = () => {
       {selectedCourse && videos[selectedCourse] && (
         <div className="lesson-grid">
           {videos[selectedCourse].map((video, index) => (
-            <div key={index} className="lesson-card">
+            <div key={index} className="lesson-card" onClick={() => setFullscreenVideo(video)}>
               <div className="video-box">
                 <iframe src={video} title={selectedCourse} allowFullScreen></iframe>
               </div>
               <p className="video-title">{selectedCourse} Lesson</p>
             </div>
           ))}
+        </div>
+      )}
+
+      {fullscreenVideo && (
+        <div className="fullscreen-video" onClick={() => setFullscreenVideo(null)}>
+          <iframe src={fullscreenVideo} title="Fullscreen Video" allowFullScreen></iframe>
         </div>
       )}
     </div>

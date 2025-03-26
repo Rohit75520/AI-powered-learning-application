@@ -13,7 +13,7 @@ body {
 }
 
 .lesson-title {
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: bold;
   margin-bottom: 20px;
   text-shadow: 2px 2px 15px rgba(255, 255, 255, 0.3);
@@ -22,21 +22,22 @@ body {
 /* Selection Box */
 .selection-box {
   margin: 20px auto;
-  padding: 15px;
+  padding: 25px 25px;
+  font-size: 1.3rem;
   background: rgba(255, 255, 255, 0.15);
-  backdrop-filter: blur(20px);
   border-radius: 20px;
-  width: 340px;
+  width: 370px;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.6);
   transition: transform 0.3s ease-in-out;
 }
 
 .selection-box:hover {
-  transform: scale(1.08);
+  transform: scale(1.0);
 }
 
 .selection-box select {
   width: 100%;
+  margin-top: 10px;
   padding: 12px;
   font-size: 1.1rem;
   border: none;
@@ -58,7 +59,7 @@ body {
 
 .selection-box select:hover {
   background: rgba(255, 255, 255, 0.3);
-  transform: scale(1.02);
+  transform: scale(1.0);
 }
 
 /* Video Grid */
@@ -71,7 +72,6 @@ body {
 
 .lesson-card {
   background: rgba(255, 255, 255, 0.15);
-  backdrop-filter: blur(20px);
   padding: 25px;
   border-radius: 18px;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.6);

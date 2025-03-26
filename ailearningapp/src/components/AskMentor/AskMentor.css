@@ -1,0 +1,96 @@
+/* Center the Ask Mentor container */
+.ask-mentor-container {
+    position:absolute;
+    max-width: 600px;
+    align-content: center;
+    justify-content: center;
+   height: 350px;
+    width: 400px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+   
+   
+    padding: 25px;
+    display: block;
+    background: linear-gradient(135deg, #007bff, #6610f2); /* Gradient Background */
+    color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    text-align: center;
+  }
+  
+  /* Title Styling */
+  h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    font-weight: bold;
+  }
+  
+  /* Form Layout */
+  .ask-mentor-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  /* Dropdown Styling */
+  .category-select {
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    background: white;
+    color: #333;
+    cursor: pointer;
+  }
+  
+  /* Input Field */
+  .question-input {
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    width: 100%;
+    outline: none;
+  }
+  
+  /* Submit Button */
+  .submit-button {
+    padding: 12px 15px;
+    font-size: 18px;
+    background: #28a745; /* Green Color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease;
+  }
+  
+  .submit-button:hover {
+    background: #218838;
+  }
+  
+  /* Response Container */
+  .responses {
+    margin-top: 20px;
+    text-align: left;
+    max-height: 300px;
+    overflow-y: auto;
+  }
+  
+  /* Individual Response */
+  .response {
+    background: white;
+    padding: 15px;
+    border-radius: 5px;
+    margin-top: 10px;
+    color: black;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .response p {
+    margin: 5px 0;
+  }
+  

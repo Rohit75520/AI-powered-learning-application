@@ -2,7 +2,9 @@ import React from 'react'
 import Welcome from './Welcome';
 import Cards from './Cards';
 import Mentor from './Mentor';
-import Chatbot from './Chatbot';
+
+import Bot from './Bot';
+import Chatbot from '../Chatbot/Chatbot';
 
 
 const UserDashboard = () => {
@@ -10,7 +12,8 @@ const UserDashboard = () => {
     <div><Welcome/>
     <Cards/>
     <Mentor/>
-    <Chatbot/>
+    
+    <Bot/>
     </div>
   )
 }

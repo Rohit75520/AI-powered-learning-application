@@ -1,0 +1,137 @@
+/* Background */
+.auth-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url("https://source.unsplash.com/1600x900/?education,technology") no-repeat center center/cover;
+  }
+  
+  /* Glassmorphism Box */
+  .auth-box {
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border-radius: 15px;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    width: 400px;
+    transition: transform 0.4s ease-in-out, opacity 0.4s;
+  }
+  
+  /* Tabs */
+  .tabs {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 15px;
+  }
+  
+  .tabs button {
+    background: none;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.6);
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .tabs button.active {
+    color: #ff4b2b;
+    border-bottom: 2px solid #ff4b2b;
+  }
+  
+  /* Title */
+  .auth-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #222;
+    margin-bottom: 15px;
+  }
+  
+  /* Input Fields */
+  .auth-input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 8px;
+    outline: none;
+    font-size: 16px;
+    background: rgba(255, 255, 255, 0.2);
+    color: black;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .auth-input::placeholder {
+    color: rgba(0, 0, 0, 0.7);
+    font-weight: 500;
+  }
+  
+  .auth-input:focus {
+    background: rgba(255, 255, 255, 0.4);
+    border: 2px solid #ff416c;
+    transform: scale(1.02);
+  }
+  
+  /* Button */
+  .auth-button {
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(45deg, #ff416c, #ff4b2b);
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 10px;
+  }
+  
+  .auth-button:hover {
+    background: linear-gradient(45deg, #ff4b2b, #ff416c);
+    transform: scale(1.05);
+  }
+  
+  /* Footer */
+  .auth-footer {
+    margin-top: 15px;
+    color: rgba(0, 0, 0, 0.8);
+    font-weight: bold;
+  }
+  
+  /* Toggle Button */
+  .toggle-button {
+    background: none;
+    border: none;
+    color: #ff4b2b;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .toggle-button:hover {
+    text-decoration: underline;
+    color: #ff416c;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 480px) {
+    .auth-box {
+      width: 90%;
+      padding: 25px;
+    }
+  
+    .auth-title {
+      font-size: 1.8rem;
+    }
+  
+    .auth-button {
+      font-size: 16px;
+    }
+  }

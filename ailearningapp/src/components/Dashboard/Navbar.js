@@ -2,6 +2,7 @@ import React from "react";
 import "./Userstyle.css";
 import { Link, useLocation } from "react-router-dom";
 
+
 const Navbar = () => {
   const location = useLocation(); // ✅ Use React Router to get current path
 
@@ -36,6 +37,10 @@ const Navbar = () => {
           >
             Analytics
           </Link>
+        </div>
+        <div class="profile">
+        <img src="/Images/Profile.jpg"/>
+
         </div>
       </div>
     </div>

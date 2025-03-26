@@ -57,6 +57,11 @@
     z-index: 100;
     background: linear-gradient(90deg,#6b3c93,#fe84e8);
 }
+
+.header .profile img{
+  height: 50px;
+  border-radius: 30px;
+}
 .header .logo{
     color: aqua;
 }
@@ -66,6 +71,7 @@
     margin-left: 40px;
     font-size: 1.1em;
     color: #f0eaea;
+    right: -250px;
 } 
 .navlinks .a:hover{
     color: rgb(255, 255, 255);
@@ -92,6 +98,7 @@ text-decoration: none;
     width: 100%;
    
 }
+
 .welcome{
     position: relative;
     display: flex;
